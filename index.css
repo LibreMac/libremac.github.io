@@ -1,0 +1,73 @@
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  font-family: system-ui, -apple-system;
+}
+
+blockquote p::before {
+  content: "\201C";
+}
+
+blockquote p::after {
+  content: "\201D";
+}
+
+a, a:visited {
+  color: inherit;
+}
+
+.tag-line {
+  padding: 1rem;
+  margin: 0;
+}
+
+.app-list {
+  display: flex;
+  flex-direction: column;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.app-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+  text-decoration: none;
+}
+
+.app-icon {
+  width: 64px;
+  margin-right: 1rem;
+}
+
+.app-info {
+  flex: 1;
+}
+
+.app-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 0 0.2rem 0;
+}
+
+.app-description {
+  font-size: 0.9rem;
+  opacity: 0.6;
+  margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .app-item {
+    border-bottom-color: #333;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .app-item {
+    border-bottom-width: 0.5px;
+  }
+}
