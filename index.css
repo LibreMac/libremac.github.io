@@ -64,6 +64,14 @@ a, a:visited {
   .app-item {
     border-bottom-color: #333;
   }
+
+  #markedit-icon {
+    content: url("https://raw.githubusercontent.com/MarkEdit-app/MarkEdit/main/Icon-dark.png");
+  }
+
+  #textgrabber2-icon {
+    content: url("https://raw.githubusercontent.com/TextGrabber2-app/TextGrabber2/main/Icon-dark.png");
+  }
 }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
